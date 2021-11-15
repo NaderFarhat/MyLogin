@@ -12,11 +12,6 @@ function Login() {
   const inputRef = useRef();
 
   const getDegreesInput = (x) => {
-    // x = x + 100;
-    // const y = 80;
-    // const rad2Deg = 180 / Math.PI;
-    // const angleOffset = 210;
-    // return Math.atan2(x, y) * rad2Deg + angleOffset;
     if (x > 31) {
       x = 31;
     }
@@ -37,32 +32,15 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(e.target.email.value);
-
-    if (!e.target.email.value) {
-      alert("Email is required");
-    } else if (!e.target.email.value) {
-      alert("Valid email is required");
-    } else if (!e.target.password.value) {
-      alert("Password is required");
-    } else if (
-      e.target.email.value === "me@example.com" &&
-      e.target.password.value === "123456"
-    ) {
-      alert("Successfully logged in");
-      e.target.email.value = "";
-      e.target.password.value = "";
-    } else {
-      alert("Wrong email or password combination");
-    }
   };
 
   return (
     <div className="App">
       <div>
-        <div className="container-face">
-          <div class="head">
+        <div className="container-face rotating">
+          <div class="head ">
             <div
-              class="semi-circle-left"
+              class="semi-circle left-circle"
               style={isClosed ? closedEyes : undefined}
             >
               <div class="rotate" style={styleEye}>
@@ -75,7 +53,7 @@ function Login() {
             {isClosed && <div class="eyelash-left" />}
 
             <div
-              class="semi-circle-right"
+              class="semi-circle right-circle"
               style={isClosed ? closedEyes : undefined}
             >
               <div class="rotate" style={styleEye}>
