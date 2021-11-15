@@ -57,6 +57,7 @@
   width: 300px;
   height: 300px;
   position: relative;
+  margin-bottom: 40px;
   border-radius: 150px;
   -webkit-border-radius: 150px;
   -moz-border-radius: 150px;
@@ -92,11 +93,11 @@ div.smile {
   width: 100px;
   height: 100px;
   left: 30px;
-  top: 100px;
+  top: 77px;
   transform: rotateZ(90deg);
   background-color: white;
   position: absolute;
-  clip-path: circle(50% at 0%);
+  clip-path: circle(50% at 50%);
   /* width: 200px;
     height: 200px;
     background-color: lightblue;
@@ -119,11 +120,11 @@ div.smile {
   width: 100px;
   height: 100px;
   left: 160px;
-  top: 100px;
+  top: 59px;
   transform: rotateZ(90deg);
   background-color: white;
   position: absolute;
-  clip-path: circle(50% at 0%);
+  clip-path: circle(50% at 50%);
   transition: all 0.15s ease-out;
   /* background: linear-gradient(to bottom, #000 50%, #fff 50%); */
 }
@@ -150,15 +151,15 @@ div.smile {
     border-radius: 4em;
     will-change: transform;
     overflow: hidden; */
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 73px;
   background: black;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 100px;
   position: absolute;
   left: 31px;
-  top: 20px;
+  top: 16px;
   background-color: black;
   display: block;
   transition: all 0.15s ease-out;
@@ -173,7 +174,7 @@ div.smile {
   border-bottom: 0;
   z-index: 1;
   position: absolute;
-  top: 98px;
+  top: 120px;
   left: 29px;
   transform: rotate(180deg);
 }

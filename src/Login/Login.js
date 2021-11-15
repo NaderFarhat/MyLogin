@@ -20,7 +20,7 @@ function Login() {
     if (x > 31) {
       x = 31;
     }
-    let value = -4.5 * x - 80;
+    let value = 4.5 * x - 80;
     return value;
   };
 
@@ -72,7 +72,7 @@ function Login() {
                 ></div>
               </div>
             </div>
-            <div class="eyelash-left"></div>
+            {isClosed && <div class="eyelash-left" />}
 
             <div
               class="semi-circle-right"
@@ -85,7 +85,7 @@ function Login() {
                 ></div>
               </div>
             </div>
-            <div class="eyelash-right"></div>
+            {isClosed && <div class="eyelash-right" />}
             <div class="smile">
               <div class="corner"></div>
               <div class="corner right"></div>
